@@ -22,7 +22,7 @@ class Class_Run_States:
         
     def run(self):
         while not self.__stop_event.is_set():
-            pyautogui.moveRel(1, 0, duration = 0)       # 1 and -1 are coordinates of the coursor,
+            pyautogui.moveRel(1, 0, duration = 0)       # 1 and -1 are coordinates of the cursor,
             pyautogui.moveRel(-1,0, duration = 0)       # can be set to 0 but after that
             time.sleep(randrange(3, 25))                # you can't see whether the app run or not
             print('running')
